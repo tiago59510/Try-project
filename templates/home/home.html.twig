@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Vous êtes nouveau ?</h1>
+    <p class="lead">Inscrivez-vous sur notre site afin de bénéficier d'offres exclusifs</p>
+    <hr class="my-4">
+    <p>Bonne navigation sur notre site web &nbsp;<i class="fas fa-smile-wink"></i></p>
+    <a class="btn btn-primary btn-lg" href="{{path('form')}}" role="button">Inscrivez-vous</a>
+  </div>
+  
+{% endblock %}
