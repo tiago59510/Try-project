@@ -33,6 +33,8 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         'form' => [[], ['_controller' => 'App\\Controller\\FormController::form'], [], [['text', '/inscription']], [], []],
+        'login' => [[], ['_controller' => 'App\\Controller\\FormController::login'], [], [['text', '/connexion']], [], []],
+        'logout' => [[], ['_controller' => 'App\\Controller\\FormController::logOut'], [], [['text', '/logout']], [], []],
         'home' => [[], ['_controller' => 'App\\Controller\\HomeController::home'], [], [['text', '/']], [], []],
         'product' => [[], ['_controller' => 'App\\Controller\\ProductController::product'], [], [['text', '/vélos']], [], []],
     ];

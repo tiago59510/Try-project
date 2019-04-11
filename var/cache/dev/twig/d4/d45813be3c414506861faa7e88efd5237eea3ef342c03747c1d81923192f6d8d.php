@@ -93,7 +93,10 @@ class __TwigTemplate_67186ca72975a990606fcf59e24a9871c32a2982667a3af162d5601cbfa
         
                         <ul class=\"navbar-nav\">
                              <li class=\"nav-item\">
-                                 <a class=\"nav-link\" href=\"#\">Mon Compte</a>
+                                 <a class=\"nav-link\" href=\"";
+        // line 37
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("login");
+        echo "\">Mon Compte</a>
                              </li>
                              <li class=\"nav-item\">
                                  <a class=\"nav-link cart\" href=\"#\">Panier</a>
@@ -203,7 +206,7 @@ class __TwigTemplate_67186ca72975a990606fcf59e24a9871c32a2982667a3af162d5601cbfa
 
     public function getDebugInfo()
     {
-        return array (  178 => 49,  161 => 48,  144 => 8,  126 => 5,  114 => 50,  111 => 49,  109 => 48,  86 => 28,  80 => 25,  66 => 14,  59 => 9,  57 => 8,  51 => 5,  45 => 1,);
+        return array (  181 => 49,  164 => 48,  147 => 8,  129 => 5,  117 => 50,  114 => 49,  112 => 48,  98 => 37,  86 => 28,  80 => 25,  66 => 14,  59 => 9,  57 => 8,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -244,7 +247,7 @@ class __TwigTemplate_67186ca72975a990606fcf59e24a9871c32a2982667a3af162d5601cbfa
         
                         <ul class=\"navbar-nav\">
                              <li class=\"nav-item\">
-                                 <a class=\"nav-link\" href=\"#\">Mon Compte</a>
+                                 <a class=\"nav-link\" href=\"{{path('login')}}\">Mon Compte</a>
                              </li>
                              <li class=\"nav-item\">
                                  <a class=\"nav-link cart\" href=\"#\">Panier</a>

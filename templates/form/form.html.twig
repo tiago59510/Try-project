@@ -4,10 +4,19 @@
 
 {% block body %}
 
-{{form_start(form)}}
+{{ form_start(form,({attr:{'class': 'my-4'}}))}}
 
-{{form_widget(form)}}
+<div class="container">
 
-{{form_end(form)}}
+    {{ form_row(form.username, {'attr':{'class': 'form-control mb-2 ',  'placeholder': 'votre pseudo', 'novalidate': 'novalidate'}})}}
+    {{ form_row(form.email, {'attr':{'class': 'form-control',  'placeholder': 'votre adresse email', 'novalidate': 'novalidate'}})}}
+    {{ form_row(form.password, {'attr':{'class': 'form-control', 'placeholder': 'votre mot de passe', 'novalidate': 'novalidate'}})}}
+    {{ form_row(form.confirm_password,{'attr':{'class': 'form-control', 'placeholder': 'confirmer votre mot de passe'}})}}
+    
+    <button href="" class="btn btn-primary btn-block my-3" type="submit">Envoyer</button>
+                                           
+</div>
+
+{{ form_end(form) }}
 
 {% endblock %}

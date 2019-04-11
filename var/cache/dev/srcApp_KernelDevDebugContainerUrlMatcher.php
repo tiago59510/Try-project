@@ -21,6 +21,8 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
             '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
             '/inscription' => [[['_route' => 'form', '_controller' => 'App\\Controller\\FormController::form'], null, null, null, false, false, null]],
+            '/connexion' => [[['_route' => 'login', '_controller' => 'App\\Controller\\FormController::login'], null, null, null, false, false, null]],
+            '/logout' => [[['_route' => 'logout', '_controller' => 'App\\Controller\\FormController::logOut'], null, null, null, false, false, null]],
             '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::home'], null, null, null, false, false, null]],
             '/vélos' => [[['_route' => 'product', '_controller' => 'App\\Controller\\ProductController::product'], null, null, null, false, false, null]],
         ];
